@@ -8,3 +8,6 @@ input {
 	display: block;
 	margin: 5px;
 }
+.success {
+	color: green;
+}
