@@ -3,6 +3,29 @@
     <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
   </head>
   <body>
-    The best place to start is the "WelcomeController.py" file in app/controllers.
+    <div class="container">
+    	<h2>Registration</h2>
+    	<form action="/create" method="post">
+    		<label for="first_name">First Name: </label>
+    		<input type="text" name="first_name">
+    		<label for="last_name">Last Name: </label>
+    		<input type="text" name="last_name">
+    		<label for="email">Email: </label>
+    		<input type="text" name="email">
+    		<label for="pw">Password: </label>
+    		<input type="text" name="pw">
+    		<label for="confirm_pw">Confirm Password: </label>
+    		<input type="confirm_pw" name="confirm_pw">
+    		<input type="submit" name="register">
+    	</form>
+    	<h2>Login</h2>
+    	<form action="/login" method="get">
+    		<label for="email">Email: </label>
+    		<input type="text" name="email">
+    		<label for="password">Password: </label>
+    		<input type="text" name="pw">
+    		<input type="submit" name="login" value="Login">
+    	</form>
+    </div>
   </body>
 </html>
